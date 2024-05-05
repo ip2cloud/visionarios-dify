@@ -380,9 +380,7 @@ services:
     image: nginx:latest
     restart: always
     volumes:
-      - ./nginx:/etc/nginx/nginx.conf
-      - ./nginx:/etc/nginx/proxy.conf
-      - ./nginx/conf.d:/etc/nginx/conf.d/
+      - ./nginx:/etc/nginx/
       #- ./nginx/ssl:/etc/ssl
     depends_on:
       - api
